@@ -1,7 +1,7 @@
 # Jarkom-Modul-1-B03-2023
-### Anggota :
-### Syarifah Talitha Erfany (5025211175)
-### Wan Sabrina Mayzura (5025211023)
+Anggota :
+Syarifah Talitha Erfany (5025211175)
+Wan Sabrina Mayzura (5025211023)
 
 ## 1. User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
 ### a. Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
