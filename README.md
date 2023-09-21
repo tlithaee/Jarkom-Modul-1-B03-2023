@@ -64,19 +64,19 @@
 
 - Untuk pencarian menggunakan IP source dan IP destination bisa menggunakan `(ip.src == 239.255.255.250 || ip.dst == 239.255.255.250)`
 
-![3a.1](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no3/no3a.1.png)
+    ![3a.1](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no3/no3a.1.png)
 
 - Setelah diketahui IP-nya, akan dicari port 3702. Karena setelah difilter berdasarkan IP, didapatkan 2 protokol yaitu SSDP dan UDP. Pada gambar dibawah SSDP tidak ada port pada pertanyaan yang diinginkan.
 
-![3a.2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no3/3a.2.png)
+    ![3a.2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no3/3a.2.png)
 
 - Digunakan protokol UDP dan didapatkan jawaban sebanyak 21 paket yang tercapture.
 
-![3a.3](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no3/3a.3.png)
+    ![3a.3](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no3/3a.3.png)
 
 **b. Protokol layer transport apa yang digunakan?**
 
-UDP
+- UDP
 
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 3.
 
@@ -84,9 +84,15 @@ UDP
 
 - Mnggunakan `frame.number == 130` untuk mencari nomor paket yang diinginkan.
 
+    ![4.1](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no4/4.1.png)
+
 - Untuk mencari checksum dapat digunakan `ip.checksum` dalam filter tambahannya, atau langsung dapat mengklik 2x di paket yang sudah terfilter menggunakan frame number.
 
-- Lalu didapatkan checksum paketnya adalah
+    ![4.2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no4/4.2.png)
+
+- Lalu didapatkan checksum paketnya adalah 0x18e5.
+
+    ![4.3](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no4/4.3.png)
 
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 4.
 
@@ -162,7 +168,9 @@ UDP
 
 ## 7. Berapa jumlah packet yang menuju IP 184.87.193.88?
 
-- dengan menggunakan filter `ip.addr == 184.87.193.88` dapat diketahui jumlah paket yang menuju/destination IP 184.87.193.88 adalah sebanyak 6
+- dengan menggunakan filter `ip.addr == 184.87.193.88` dapat diketahui jumlah paket yang menuju/destination IP 184.87.193.88 adalah sebanyak 6.
+
+    ![7](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no7/7.png)
 
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 7.
 
@@ -178,6 +186,8 @@ UDP
 ## 9. Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
 
 - Kueri yang digunakan adalah `ip.src == 10.51.40.1 && ip.dst != 10.51.40.1`
+
+    ![9](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no9/9.png)
 
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 9. 
 
