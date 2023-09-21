@@ -1,11 +1,10 @@
 # Laporan Resmi Praktikum Jaringan Komputer Modul 1
-### Kelompok B03
+### Kelompok : B03
 ### Anggota :
 | Nama    | NRP |
 | ------- | --- |
 | Syarifah Talitha Erfany | 5025211175  |
 | Wan Sabrina Mayzura    | 5025211023  |
-<br />
 
 # Soal dan Solusi
 ## 1. User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
