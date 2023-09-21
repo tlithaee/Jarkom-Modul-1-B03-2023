@@ -66,11 +66,13 @@
 
 ![3a.1](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no3/no3a.1.png)
 
-- Setelah diketahui IP-nya, akan dicari port 3702. Karena setelah difilter berdasarkan IP, didapatkan 2 protokol yaitu SSDP dan UDP.
+- Setelah diketahui IP-nya, akan dicari port 3702. Karena setelah difilter berdasarkan IP, didapatkan 2 protokol yaitu SSDP dan UDP. Pada gambar dibawah SSDP tidak ada port pada pertanyaan yang diinginkan.
 
-- Pada gambar dibawah SSDP tidak ada port pada pertanyaan yang diinginkan.
+![3a.2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no3/3a.2.png)
 
 - Digunakan protokol UDP dan didapatkan jawaban sebanyak 21 paket yang tercapture.
+
+![3a.3](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no3/3a.3.png)
 
 **b. Protokol layer transport apa yang digunakan?**
 UDP
