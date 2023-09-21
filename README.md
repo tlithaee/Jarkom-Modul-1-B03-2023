@@ -152,7 +152,7 @@ UDP
 **Kendala:** 
 
 ## 8. Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
-- Kueri filter yang digunakan untuk mengambil semua protokol paket yang menuju port 80 adalah `tcp.dstport == 80 || udp.dstport == 80`. `tcp.dstport == 80` berarti kita mencari paket-paket yang menuju ke port 80 menggunakan protokol TCP. `udp.dstport == 80` berarti kita mencari paket-paket yang menuju ke port 80 menggunakan protokol UDP.
+- Kueri filter yang digunakan untuk mengambil semua protokol paket yang menuju port 80 adalah `tcp.dstport == 80 || udp.dstport == 80`. Filter `tcp.dstport == 80` berarti kita mencari paket-paket yang menuju ke port 80 menggunakan protokol TCP. Filter `udp.dstport == 80` berarti kita mencari paket-paket yang menuju ke port 80 menggunakan protokol UDP.
 
 - Sehingga didapatkan flag dari jawaban tersebut:
 
