@@ -34,22 +34,27 @@
     ![1d](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no1/1d.png)
 
 - Sehingga didapatkan flag dari jawaban-jawaban di atas:
+
     ![terminal 1](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no1/terminal%201.png)
 
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 1.
 
 ## 2. Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 - Pada file PCAP, dilakukan filtering untuk mencari packet yang menggunakan protocol `HTTP` karena yang akan dicari adalah suatu website. Lalu dipilih packet yang memiliki tulisan `OK` dan `text/html`.
+
     ![2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no2/2.1.png)
 
 - Lalu karena ini merupakan soal stream, untuk mendapatkan nama web server yang digunakan, `follow http stream` seperti berikut:
+
     ![2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no2/2.2.png)
 
 - Lalu pada kode HTML, cari nama server tersebut dan didapatkan `gunicorn` sebagai nama server tersebut.
+
     ![2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no2/2.3.png)
 
 - Sehingga didapatkan flag dari jawaban tersebut:
-![2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no2/2.4.png)
+
+    ![2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no2/2.4.png)
 
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 2.
 
@@ -84,57 +89,62 @@ UDP
 
 ## 6. Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
 - Berdasarkan soal, `server SOURCE ADDRESS 7812` menunjukkan bahwa packet yang akan ditelusuri adalah packet pada frame 7812. Sehingga dilakukan filtering dengan syntax `frame.number == 7812`, dan didapatkan detail sebagai berikut:
-gambar 6.1
+
+    ![6](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no6/6.1.png)
 
 - Pada soal yang diberikan, terdapat clue dari pesan tersembunyi yang membentuk kata `"SUBTITUSI"`. 
-gambar 6.2
+
+    ![6](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no6/6.2.png)
 
 - Lalu pada hasil pencarian hanya menampilkan `a1 e5 u21`, dan dapat ditafsirkan bahwa angka pada sebelah kanan masing-masing huruf adalah urutan huruf tersebut di dalam suatu abjad.
 
-| Huruf    | Urutan |
-| ------- | ---   |
-| a       | 1     |
-| b       | 2     |
-| c       | 3     |
-| d       | 4     |
-| e       | 5     |
-| f       | 6     |
-| g       | 7     |
-| h       | 8     |
-| i       | 9     |
-| j       | 10    |
-| k       | 11    |
-| l       | 12    |
-| m       | 13    |
-| n       | 14    |
-| o       | 15    |
-| p       | 16    |
-| q       | 17    |
-| r       | 18    |
-| s       | 19    |
-| t       | 20    |
-| u       | 21    |
-| v       | 22    |
-| w       | 23    |
-| x       | 24    |
-| y       | 25    |
-| z       | 26    |
+    | Huruf    | Urutan |
+    | ------- | ---   |
+    | a       | 1     |
+    | b       | 2     |
+    | c       | 3     |
+    | d       | 4     |
+    | e       | 5     |
+    | f       | 6     |
+    | g       | 7     |
+    | h       | 8     |
+    | i       | 9     |
+    | j       | 10    |
+    | k       | 11    |
+    | l       | 12    |
+    | m       | 13    |
+    | n       | 14    |
+    | o       | 15    |
+    | p       | 16    |
+    | q       | 17    |
+    | r       | 18    |
+    | s       | 19    |
+    | t       | 20    |
+    | u       | 21    |
+    | v       | 22    |
+    | w       | 23    |
+    | x       | 24    |
+    | y       | 25    |
+    | z       | 26    |
 
 - Lalu dari IP yang didapatkan pada packet 7812, lakukan substitusi IP tersebut dari angka menjadi huruf.
-```
-104.18.14.101
-10 4 18 14 10 1
+    ```
+    104.18.14.101
+    10 4 18 14 10 1
 
-10 = J
-4 = D
-18 = R
-14 = N
-10 = J
-1 = A
-```
+    10 = J
+    4 = D
+    18 = R
+    14 = N
+    10 = J
+    1 = A
+
+    JDRNJA
+    ```
 
 - Sehingga didapatkan flag dari jawaban tersebut:
-gambar 6.3
+
+    ![6](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no6/6.3.png)
 
 **Kendala:** Soal nomor 6 tidak dapat diselesaikan pada masa praktikum, sehingga diselesaikan pada masa revisi. 
 
@@ -144,11 +154,9 @@ gambar 6.3
 ## 8. Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
 - Kueri filter yang digunakan untuk mengambil semua protokol paket yang menuju port 80 adalah `tcp.dstport == 80 || udp.dstport == 80`. `tcp.dstport == 80` berarti kita mencari paket-paket yang menuju ke port 80 menggunakan protokol TCP. `udp.dstport == 80` berarti kita mencari paket-paket yang menuju ke port 80 menggunakan protokol UDP.
 
-gambar 8.1
-
 - Sehingga didapatkan flag dari jawaban tersebut:
 
-gambar 8.2
+    ![8](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no8/8.png)
 
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 8.
 
@@ -157,16 +165,20 @@ gambar 8.2
 
 ## 10. Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet.
 - Pada file PCAP, dilakukan filtering untuk mencari packet yang menggunakan protokol `telnet` saja.
-gambar 10.1
+
+    ![10.1](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no10/10.1.png)
 
 - Lalu pilih salah satu packet (yang paling bawah). Dan follow stream (TCP Stream).
-gambar 10.2
+
+    ![10.2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no10/10.2.png)
 
 - Lalu didapatkan username dari `Login: ddhhaaffiinn` dan password dari `Password: kesayangannyak0k0`.
-gambar 10.3
+
+    ![10.3](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no10/10.3.png)
 
 - Sehingga didapatkan flag dari jawaban (untuk username ddhhaaffiinn tidak berhasil, sehingga digunakan dhafin saja sebagai username) tersebut:
-gambar 10.4
+
+    ![10.4](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no10/10.4.png)
 
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 10.
 
