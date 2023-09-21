@@ -62,21 +62,30 @@
 
 **a. Berapa banyak paket yang tercapture dengan IP source maupun destination address adalah 239.255.255.250 dengan port 3702?**
 
-Untuk pencarian menggunakan IP source dan IP destination bisa menggunakan `(ip.src == 239.255.255.250 || ip.dst == 239.255.255.250)`
-
-**Screenshot :**
+- Untuk pencarian menggunakan IP source dan IP destination bisa menggunakan `(ip.src == 239.255.255.250 || ip.dst == 239.255.255.250)`
 
 ![3a.1](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no3/no3a.1.png)
 
-setelah diketahui IP-nya, akan dicari port 3702. Karena setelah difilter berdasarkan IP, didapatkan 2 protokol yaitu SSDP dan UDP
+- Setelah diketahui IP-nya, akan dicari port 3702. Karena setelah difilter berdasarkan IP, didapatkan 2 protokol yaitu SSDP dan UDP.
 
-### b. Protokol layer transport apa yang digunakan?
+- Pada gambar dibawah SSDP tidak ada port pada pertanyaan yang diinginkan.
+
+- Digunakan protokol UDP dan didapatkan jawaban sebanyak 21 paket yang tercapture.
+
+**b. Protokol layer transport apa yang digunakan?**
 UDP
 
-**Kendala:** 
+**Kendala:** Tidak ada kendala pada pengerjaan nomor 3.
 
 ## 4. Berapa nilai checksum yang didapat dari header pada paket nomor 130?
-**Kendala:** 
+
+- Mnggunakan `frame.number == 130` untuk mencari nomor paket yang diinginkan.
+
+- Untuk mencari checksum dapat digunakan `ip.checksum` dalam filter tambahannya, atau langsung dapat mengklik 2x di paket yang sudah terfilter menggunakan frame number.
+
+- Lalu didapatkan checksum paketnya adalah
+
+**Kendala:** Tidak ada kendala pada pengerjaan nomor 4.
 
 ## 5. Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
 **a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?**
@@ -149,7 +158,10 @@ UDP
 **Kendala:** Soal nomor 6 tidak dapat diselesaikan pada masa praktikum, sehingga diselesaikan pada masa revisi. 
 
 ## 7. Berapa jumlah packet yang menuju IP 184.87.193.88?
-**Kendala:** 
+
+- dengan menggunakan filter `ip.addr == 184.87.193.88` dapat diketahui jumlah paket yang menuju/destination IP 184.87.193.88 adalah sebanyak 6
+
+**Kendala:** Tidak ada kendala pada pengerjaan nomor 7.
 
 ## 8. Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
 - Kueri filter yang digunakan untuk mengambil semua protokol paket yang menuju port 80 adalah `tcp.dstport == 80 || udp.dstport == 80`. Filter `tcp.dstport == 80` berarti kita mencari paket-paket yang menuju ke port 80 menggunakan protokol TCP. Filter `udp.dstport == 80` berarti kita mencari paket-paket yang menuju ke port 80 menggunakan protokol UDP.
@@ -161,7 +173,10 @@ UDP
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 8.
 
 ## 9. Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
-**Kendala:** 
+
+- Kueri yang digunakan adalah `ip.src == 10.51.40.1 && ip.dst != 10.51.40.1`
+
+**Kendala:** Tidak ada kendala pada pengerjaan nomor 9. 
 
 ## 10. Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet.
 - Pada file PCAP, dilakukan filtering untuk mencari packet yang menggunakan protokol `telnet` saja.
