@@ -20,7 +20,7 @@ Untuk pencarian menggunakan IP source dan IP destination bisa menggunakan `(ip.s
 
 **Screenshot :**
 
-![3a.1](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/blob/main/no3/no3.png)
+![3a.1](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/blob/main/no3/no3a.1.png)
 
 setelah dikeathui IP-nya, akan dicari port 3702. Karena setelah difilter berdasarkan IP, didapatkan 2 protokol yaitu SSDP dan UDP
 
