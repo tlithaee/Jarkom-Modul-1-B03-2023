@@ -18,6 +18,8 @@ Wan Sabrina Mayzura (5025211023)
 Untuk pencarian menggunakan IP source dan IP destination bisa menggunakan `(ip.src == 239.255.255.250 || ip.dst == 239.255.255.250) && udp.port == 3702` dan ditemukan paket yang tercapture berjumlah 21.
 
 **Screenshot :**
+url(no3/no3.png);
+
 
 ### b. Protokol layer transport apa yang digunakan?
 UDP
