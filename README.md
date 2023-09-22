@@ -97,6 +97,9 @@
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 4.
 
 ## 5. Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
+
+- Dikarenakan tidak adanya nc pada soal maka dicari terlebih dahulu. Pada soal disebutkan bahwa digunakan service SMTP
+
 **a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?**
 
 **b. Port berapakah pada server yang digunakan untuk service SMTP?**
