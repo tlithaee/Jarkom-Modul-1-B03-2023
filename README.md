@@ -100,6 +100,16 @@
 
 - Dikarenakan tidak adanya nc pada soal maka dicari terlebih dahulu. Pada soal disebutkan bahwa digunakan service SMTP
 
+   ![5](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no5/5.png)
+
+- Dipilih yang paling pertamna lalu dipencet hingga keluar menu dan pilih follow TCP stream.
+
+   ![5.1](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no5/5.1.png)
+
+- Ditemukan kode yang perlu di decode pada bash64 terlebih dahulu.
+
+   ![5.2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no5/5.2.png)
+
 **a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?**
 
 **b. Port berapakah pada server yang digunakan untuk service SMTP?**
