@@ -110,7 +110,17 @@
 
    ![5.2](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no5/5.2.png)
 
+- Setelah didecode dapat password sebagai berikut :
+
+   ![5.3](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no5/5.3.png)
+
+- digunakan password pada zip-nya untuk didapatkan nc soal.
+
+   ![5.4](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no5/5.4.png)
+  
 **a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?**
+
+- Pada filter dimasukkan `frame.number` untuk melihat paket 
 
 **b. Port berapakah pada server yang digunakan untuk service SMTP?**
 
