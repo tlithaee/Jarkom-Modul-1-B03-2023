@@ -78,6 +78,10 @@
 
 - UDP
 
+- Didapatkan flagnya :
+
+  ![3ans](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no3/3ans.png)
+
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 3.
 
 ## 4. Berapa nilai checksum yang didapat dari header pada paket nomor 130?
@@ -93,6 +97,10 @@
 - Lalu didapatkan checksum paketnya adalah 0x18e5.
 
     ![4.3](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no4/4.3.png)
+
+- Didapatkan flagnya :
+
+  ![4ans](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no4/4ans.png)
 
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 4.
 
@@ -205,6 +213,10 @@
 
     ![7](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no7/7.png)
 
+- Didapatkan flagnya :
+
+  ![7ans](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no7/7ans.png)
+
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 7.
 
 ## 8. Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
@@ -221,6 +233,10 @@
 - Kueri yang digunakan adalah `ip.src == 10.51.40.1 && ip.dst != 10.51.40.1`
 
     ![9](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no9/9.png)
+
+- Didapatkan flagnya :
+
+  ![3ans](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no9/9ans.png)
 
 **Kendala:** Tidak ada kendala pada pengerjaan nomor 9. 
 
