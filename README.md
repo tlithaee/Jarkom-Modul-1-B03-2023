@@ -120,13 +120,23 @@
   
 **a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?**
 
-- Pada filter dimasukkan `frame.number` untuk melihat paket 
+- Pada filter dimasukkan `frame.number` untuk melihat paket yang di capture berjumlah 60.
+
+  ![5a](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no5/5a.png)
 
 **b. Port berapakah pada server yang digunakan untuk service SMTP?**
 
+- Pencet 2x untuk melihat menu lebih jelas pada paket dengan protokol SMTP dan ditemukan port-nya yaitu 25
+
+  ![5b](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no5/5b.png)
+
 **c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?**
 
-**Kendala:** 
+- Pada gambar terdapat 2 jenis IP, yang merupakan public IP adalah 74.53.140.153
+
+  ![5c](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no5/5c.png)
+
+**Kendala:** Sempat bingung dalam memahami public IP dan private IP. 
 
 ## 6. Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
 - Berdasarkan soal, `server SOURCE ADDRESS 7812` menunjukkan bahwa packet yang akan ditelusuri adalah packet pada frame 7812. Sehingga dilakukan filtering dengan syntax `frame.number == 7812`, dan didapatkan detail sebagai berikut:
