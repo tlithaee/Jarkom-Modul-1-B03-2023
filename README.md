@@ -253,7 +253,11 @@
 
     ![10.3](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no10/10.3.png)
 
-- Sehingga didapatkan flag dari jawaban (untuk username ddhhaaffiinn tidak berhasil, sehingga digunakan dhafin saja sebagai username) tersebut:
+- Saat dicoba untuk username ddhhaaffiinn, tidak berhasil, sehingga digunakan dhafin saja sebagai username (huruf yang berwarna biru saja/merah saja)
+
+    ![10.5](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no10/10.5.png)
+
+- Sehingga didapatkan flag dari jawaban tersebut:
 
     ![10.4](https://github.com/tlithaee/Jarkom-Modul-1-B03-2023/raw/main/no10/10.4.png)
 
